@@ -206,6 +206,17 @@ section { padding-block: clamp(72px, 10vw, 136px); }
 .holding p { color: var(--muted); font-size: 0.95rem; }
 .holding .since { margin-top: 6px; padding-top: 12px; border-top: 1px solid color-mix(in srgb, currentColor 14%, transparent); font-size: 0.85rem; font-weight: 600; font-variant-numeric: tabular-nums; color: var(--muted); }
 @media (max-width: 960px) { .holdings { grid-template-columns: 1fr 1fr; } }
+.holdings { grid-template-columns: repeat(4, 1fr); }
+.holding.feature { grid-column: span 4; grid-template-columns: 1fr auto; align-items: center; gap: 4px 24px; padding: 22px 26px; }
+.holding.feature .kind { grid-column: 1 / -1; }
+.holding.feature .since { margin: 0; padding: 0; border: 0; font-size: 1rem; }
+.holding.mini { padding: 20px 22px; gap: 6px; }
+.holding.mini h3 { font-size: 1.12rem; }
+.holding.mini .kind { font-size: 0.68rem; }
+.holding.mini .since { margin-top: 2px; padding-top: 8px; }
+@media (max-width: 1100px) { .holdings { grid-template-columns: repeat(3, 1fr); } .holding.feature { grid-column: span 3; } }
+@media (max-width: 760px) { .holdings { grid-template-columns: 1fr 1fr; } .holding.feature { grid-column: span 2; } }
+@media (max-width: 460px) { .holdings { grid-template-columns: 1fr; } .holding.feature { grid-column: auto; } }
 @media (max-width: 600px) { .holdings { grid-template-columns: 1fr; } }
 
 /* Track record: a lane line with a stop per milestone */
@@ -358,7 +369,9 @@ footer { background: #fff; color: var(--muted); }
 .quote .mark { color: #e3b3c1; }
 .stalk li.now::after { border-color: var(--wine); }
 .stalk li.now .yr { color: var(--wine); }
-.portrait { border-color: var(--rose); color: var(--wine); }
+.portrait { border-color: var(--rose); color: var(--wine); overflow: hidden; }
+.portrait img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.portrait { width: 104px; height: 104px; }
 .creds span:first-child { background: var(--blush); }
 .steward { border-top-color: var(--accent); }
 .steward:nth-child(even) { border-top-color: var(--rose); }
@@ -407,7 +420,7 @@ footer { border-top: 3px solid; border-image: linear-gradient(90deg, var(--accen
       <div class="wrap stats-grid">
         <div class="stat"><b>Decades</b><span>In parking, since 1976</span></div>
         <div class="stat"><b>40<sup>yrs</sup></b><span>Holding Pi Alley Garage, Boston</span></div>
-        <div class="stat"><b>9</b><span>Portfolio holdings and ventures</span></div>
+        <div class="stat"><b>34</b><span>Active holdings and investments</span></div>
         <div class="stat"><b>NPA</b><span>Past President and Chairman</span></div>
       </div>
     </div>
@@ -542,25 +555,52 @@ footer { border-top: 3px solid; border-image: linear-gradient(90deg, var(--accen
       <div class="section-head">
         <div>
           <span class="eyebrow">Portfolio</span>
-          <h2 id="portfolio-title">Holdings and venture investments</h2>
+          <h2 id="portfolio-title">Active holdings and investments</h2>
         </div>
-        <p class="lede">Operating parking businesses we have held for decades, alongside venture positions with founders we believe in.</p>
+        <p class="lede">Operating parking businesses we have held for decades, alongside venture, real estate and fund investments with partners we believe in. Years show when each investment was first made.</p>
       </div>
       <div class="filters" role="group" aria-label="Filter portfolio">
         <button class="chip" type="button" data-filter="all" aria-pressed="true">All</button>
         <button class="chip" type="button" data-filter="parking" aria-pressed="false">Parking &amp; Mobility</button>
         <button class="chip" type="button" data-filter="venture" aria-pressed="false">Venture</button>
+        <button class="chip" type="button" data-filter="realestate" aria-pressed="false">Real Estate &amp; Hospitality</button>
+        <button class="chip" type="button" data-filter="fund" aria-pressed="false">Funds</button>
       </div>
       <div class="holdings">
-        <article class="holding feature" data-cat="parking"><span class="kind">Mobility · Chairman &amp; Co-Founder</span><h3>Noson / OnAir Parking</h3><p>Simple, cost effective airport transportation access across North America.</p><span class="since">Since 2016 · Led by Pat Murray</span></article>
-        <article class="holding feature" data-cat="parking"><span class="kind">Parking Operator · Chairman</span><h3>Welcome Parking</h3><p>Parking management for property owners across New York and New Jersey, built on 60 years of owning and operating.</p><span class="since">Since 2006</span></article>
-        <article class="holding feature" data-cat="parking"><span class="kind">Parking Property · Partner</span><h3>Pi Alley Garage</h3><p>Downtown Crossing, Boston. Prepaid reservations, protected parking and EV charging.</p><span class="since">Since 1986</span></article>
-        <article class="holding" data-cat="parking"><span class="kind">Parking · Venture</span><h3>CarPark Holdings</h3><p>Parking operator led by Jeff Wolfe, former Chairman of the National Parking Association.</p><span class="since">Led by Jeff Wolfe</span></article>
-        <article class="holding" data-cat="venture"><span class="kind">Venture</span><h3>LeafLink</h3><p>Wholesale commerce platform giving brands and retailers a B2B marketplace, payments and operations tools.</p><span class="since">Led by Ryan Smith</span></article>
-        <article class="holding" data-cat="venture"><span class="kind">Venture</span><h3>Circa / Victor</h3><p>Venture investment alongside founder Tyler Arnold.</p><span class="since">Led by Tyler Arnold</span></article>
-        <article class="holding" data-cat="venture"><span class="kind">Consumer · Venture</span><h3>Subject to Change Wine Co.</h3><p>California natural wine producer.</p><span class="since">Led by Alex Pomerantz</span></article>
-        <article class="holding" data-cat="venture"><span class="kind">Venture</span><h3>LeDaveed</h3><p>Venture investment alongside founder Andy Dale.</p><span class="since">Led by Andy Dale</span></article>
-        <article class="holding" data-cat="venture"><span class="kind">Venture</span><h3>Crane &amp; Lion</h3><p>Venture investment alongside founder John Udelson.</p><span class="since">Led by John Udelson</span></article>
+        <article class="holding feature" data-cat="parking"><span class="kind">Mobility · Chairman &amp; Co-Founder</span><h3>Noson / OnAir Parking</h3><span class="since">2016</span></article>
+        <article class="holding feature" data-cat="parking"><span class="kind">Parking Operator · Chairman</span><h3>Welcome Parking</h3><span class="since">2006</span></article>
+        <article class="holding feature" data-cat="parking"><span class="kind">Parking Property · Partner</span><h3>Pi Alley Garage</h3><span class="since">1986</span></article>
+        <article class="holding mini" data-cat="venture"><span class="kind">Venture</span><h3>Bench Labs</h3><span class="since">2026</span></article>
+        <article class="holding mini" data-cat="venture"><span class="kind">Venture</span><h3>ClearPath USA</h3><span class="since">2026</span></article>
+        <article class="holding mini" data-cat="parking"><span class="kind">Parking &amp; Mobility</span><h3>Columbia Garage x Arkview</h3><span class="since">2026</span></article>
+        <article class="holding mini" data-cat="venture"><span class="kind">Venture</span><h3>Nourish</h3><span class="since">2026</span></article>
+        <article class="holding mini" data-cat="parking"><span class="kind">Parking &amp; Mobility</span><h3>YCurb</h3><span class="since">2026</span></article>
+        <article class="holding mini" data-cat="venture"><span class="kind">Venture</span><h3>Yuzu</h3><span class="since">2026</span></article>
+        <article class="holding mini" data-cat="realestate"><span class="kind">Real Estate &amp; Hospitality</span><h3>285 N 6th</h3><span class="since">2025</span></article>
+        <article class="holding mini" data-cat="realestate"><span class="kind">Real Estate &amp; Hospitality</span><h3>46th Avenue</h3><span class="since">2025</span></article>
+        <article class="holding mini" data-cat="parking"><span class="kind">Parking &amp; Mobility</span><h3>Automotus</h3><span class="since">2025</span></article>
+        <article class="holding mini" data-cat="venture"><span class="kind">Venture</span><h3>BioMet</h3><span class="since">2025</span></article>
+        <article class="holding mini" data-cat="venture"><span class="kind">Venture</span><h3>Boxcar</h3><span class="since">2025</span></article>
+        <article class="holding mini" data-cat="fund"><span class="kind">Fund</span><h3>Daybreak Ventures</h3><span class="since">2025</span></article>
+        <article class="holding mini" data-cat="realestate"><span class="kind">Real Estate &amp; Hospitality</span><h3>GFP / 220 Broadway</h3><span class="since">2025</span></article>
+        <article class="holding mini" data-cat="venture"><span class="kind">Venture</span><h3>LeafLink</h3><span class="since">2025</span></article>
+        <article class="holding mini" data-cat="venture"><span class="kind">Venture</span><h3>LeDaveed</h3><span class="since">2025</span></article>
+        <article class="holding mini" data-cat="realestate"><span class="kind">Real Estate &amp; Hospitality</span><h3>Lowell Stevens</h3><span class="since">2025</span></article>
+        <article class="holding mini" data-cat="venture"><span class="kind">Venture</span><h3>Microshare</h3><span class="since">2025</span></article>
+        <article class="holding mini" data-cat="venture"><span class="kind">Venture</span><h3>MURA</h3><span class="since">2025</span></article>
+        <article class="holding mini" data-cat="parking"><span class="kind">Parking &amp; Mobility</span><h3>Park Guard</h3><span class="since">2025</span></article>
+        <article class="holding mini" data-cat="realestate"><span class="kind">Real Estate &amp; Hospitality</span><h3>Renaissance Newark Hotel</h3><span class="since">2025</span></article>
+        <article class="holding mini" data-cat="venture"><span class="kind">Venture</span><h3>SNT Technology</h3><span class="since">2025</span></article>
+        <article class="holding mini" data-cat="parking"><span class="kind">Parking &amp; Mobility</span><h3>The Car Park</h3><span class="since">2025</span></article>
+        <article class="holding mini" data-cat="parking"><span class="kind">Parking &amp; Mobility</span><h3>Valet Manager</h3><span class="since">2025</span></article>
+        <article class="holding mini" data-cat="realestate"><span class="kind">Real Estate &amp; Hospitality</span><h3>Gramercy Park Hotel</h3><span class="since">2024</span></article>
+        <article class="holding mini" data-cat="fund"><span class="kind">Fund</span><h3>Assembly Ventures</h3><span class="since">2022</span></article>
+        <article class="holding mini" data-cat="venture"><span class="kind">Venture</span><h3>The New Farmers</h3><span class="since">2018</span></article>
+        <article class="holding mini" data-cat="realestate"><span class="kind">Real Estate &amp; Hospitality</span><h3>TWA Hotel</h3><span class="since">2017</span></article>
+        <article class="holding mini" data-cat="realestate"><span class="kind">Real Estate &amp; Hospitality</span><h3>2040 JFK Blvd.</h3><span class="since">2015</span></article>
+        <article class="holding mini" data-cat="realestate"><span class="kind">Real Estate &amp; Hospitality</span><h3>2853 JFK Blvd.</h3><span class="since">2015</span></article>
+        <article class="holding mini" data-cat="realestate"><span class="kind">Real Estate &amp; Hospitality</span><h3>7 Bushwick Place</h3><span class="since">2014</span></article>
+        <article class="holding mini" data-cat="realestate"><span class="kind">Real Estate &amp; Hospitality</span><h3>Novel Investments / BCB</h3><span class="since">2014</span></article>
       </div>
     </div>
   </section>
@@ -598,7 +638,7 @@ footer { border-top: 3px solid; border-image: linear-gradient(90deg, var(--accen
       </div>
       <div class="leaders">
         <article class="leader">
-          <div class="leader-head"><div class="portrait" aria-hidden="true">BH</div><div><h3>Brett Harwood</h3><div class="role">Founder, Principal and Philanthropist</div></div></div>
+          <div class="leader-head"><div class="portrait"><img src="brett-harwood.jpg" alt="Brett Harwood" width="92" height="92"></div><div><h3>Brett Harwood</h3><div class="role">Founder, Principal and Philanthropist</div></div></div>
           <div class="leader-body">
             <p>Brett founded Park Equity in 2002 after more than 25 years leading parking businesses, including two decades as President of Square Industries and terms as President and Chairman of the National Parking Association. He is Chairman and Co-Founder of Noson and OnAir Parking, Chairman of Welcome Parking and a longtime partner in Pi Alley Garage.</p>
             <p>Brett is a dedicated philanthropist, and his life's mission is to leave the world better than we found it. A former Trustee of Franklin &amp; Marshall College, he also served as Chairman and Trustee of Liberty Healthcare System.</p>
@@ -614,7 +654,7 @@ footer { border-top: 3px solid; border-image: linear-gradient(90deg, var(--accen
           </div>
         </article>
         <article class="leader">
-          <div class="leader-head"><div class="portrait" aria-hidden="true">JS</div><div><h3>Joe Suri</h3><div class="role">Executive Advisor</div></div></div>
+          <div class="leader-head"><div class="portrait"><img src="joe-suri.jpg" alt="Joe Suri" width="92" height="92"></div><div><h3>Joe Suri</h3><div class="role">Executive Advisor</div></div></div>
           <div class="leader-body">
             <p>Joe brings a long career in parking and mobility to Park Equity's portfolio and advisory work. He is Director of Business Development at Square Parking, previously worked at SKIDATA and founded NextGen Mobility Reps.</p>
             <p>Joe is also Co-Founder of ClearPath USA, an EdTech company that helps international students navigate life in the United States. He holds a degree in Business Entrepreneurship and Business Administration from Boise State University.</p>
