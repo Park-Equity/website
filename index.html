@@ -256,12 +256,14 @@ section { padding-block: clamp(72px, 10vw, 136px); }
 @media (max-width: 900px) { .leaders { grid-template-columns: 1fr; } }
 
 /* Stewardship */
-.steward-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.steward-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px 20px; }
+.steward.wide { grid-column: span 2; }
+.steward.wide h3 { font-size: 1.45rem; }
 .steward { border-top: 3px solid var(--lime); padding-top: 22px; display: grid; gap: 8px; align-content: start; }
 .steward h3 { font-size: 1.2rem; font-weight: 600; }
 .steward p { color: var(--muted); font-size: 0.96rem; }
 @media (max-width: 960px) { .steward-grid { grid-template-columns: 1fr 1fr; gap: 32px 20px; } }
-@media (max-width: 560px) { .steward-grid { grid-template-columns: 1fr; } }
+@media (max-width: 560px) { .steward-grid { grid-template-columns: 1fr; } .steward.wide { grid-column: auto; } }
 
 /* Contact */
 .contact { background: var(--forest); color: var(--on-forest); }
@@ -716,6 +718,7 @@ footer { border-top: 3px solid; border-image: linear-gradient(90deg, var(--accen
         <p class="lede">Philanthropy is at the heart of Park Equity. Giving back to the industry, the next generation and the institutions that shaped us is part of how we leave the world better than we found it.</p>
       </div>
       <div class="steward-grid">
+        <div class="steward wide"><h3>Brett and Margery Harwood Charitable Foundation</h3><p>The Harwood family's private charitable foundation, established in 2000 to support the causes and communities they care about.</p></div>
         <div class="steward"><h3>Park Equity Advisory Board</h3><p>A forum that brings current and future business leaders together across generations.</p></div>
         <div class="steward"><h3>NPA 40 Under 40</h3><p>Sponsor of the National Parking Association's recognition of emerging industry leaders.</p></div>
         <div class="steward"><h3>Harwood CEO and Legal Forums</h3><p>Twice yearly sessions at national conferences that give parking leaders critical information.</p></div>
