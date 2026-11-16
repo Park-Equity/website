@@ -379,6 +379,16 @@ footer { background: #fff; color: var(--muted); }
 .contact-detail .k { color: #f0c9d4; }
 footer { border-top: 3px solid; border-image: linear-gradient(90deg, var(--accent), var(--rose), var(--sky)) 1; }
 
+/* Advisory Board */
+.advisors { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.advisor { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 28px; display: grid; gap: 16px; align-content: start; }
+.advisor-head { display: flex; gap: 18px; align-items: center; }
+.advisor h3 { font-size: 1.35rem; font-weight: 600; }
+.advisor .role { color: var(--accent); font-weight: 500; font-size: 0.95rem; margin-top: 2px; }
+.advisor p { color: var(--muted); }
+.portrait.sm { width: 64px; height: 64px; font-size: 1.25rem; }
+@media (max-width: 860px) { .advisors { grid-template-columns: 1fr; } }
+
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
 </style>
 </head>
@@ -393,7 +403,7 @@ footer { border-top: 3px solid; border-image: linear-gradient(90deg, var(--accen
       <li><a href="#portfolio">Portfolio</a></li>
       <li><a href="#record">Track Record</a></li>
       <li><a href="#leadership">Leadership</a></li>
-      <li><a href="#stewardship">Advisory Board</a></li>
+      <li><a href="#advisory-board">Advisory Board</a></li>
     </ul>
     <a class="nav-cta" href="#contact">Get in touch</a>
     <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
@@ -660,6 +670,36 @@ footer { border-top: 3px solid; border-image: linear-gradient(90deg, var(--accen
             <p>Joe is also Co-Founder of ClearPath USA, an EdTech company that helps international students navigate life in the United States. He holds a degree in Business Entrepreneurship and Business Administration from Boise State University.</p>
             <div class="creds"><span>Square Parking</span><span>SKIDATA</span><span>NextGen Mobility Reps</span><span>ClearPath USA</span></div>
           </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="advisory-board" style="padding-top:0" aria-labelledby="advisory-title">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Advisory Board</span>
+          <h2 id="advisory-title">Park Equity Advisory Board</h2>
+        </div>
+        <p class="lede">Seasoned operators and founders who help guide our investments and support the next generation of leaders.</p>
+      </div>
+      <div class="advisors">
+        <article class="advisor">
+          <div class="advisor-head"><div class="portrait sm" aria-hidden="true">AK</div><div><h3>Alex Kruger</h3><div class="role">CEO, Scale Army</div></div></div>
+          <p>Alex leads Scale Army, which connects companies with AI-enabled marketing and engineering talent and has served more than 600 clients. He is also President of PolyOps and a longtime growth advisor to Skylight. He previously led growth at Wisecrack through its acquisition by Omnia Media, and he was an early investor in LeafLink.</p>
+        </article>
+        <article class="advisor">
+          <div class="advisor-head"><div class="portrait sm" aria-hidden="true">JA</div><div><h3>Jason Anderson</h3><div class="role">Head of Operations, Ethic</div></div></div>
+          <p>Jason runs operations at Ethic in New York. He spent nearly five years at Addepar, building the operations and compliance function for its Marketplace business, which served family offices and wealth managers. He also served as President of Neighborly Securities and as a Principal at NTD Capital, evaluating small business acquisitions.</p>
+        </article>
+        <article class="advisor">
+          <div class="advisor-head"><div class="portrait sm" aria-hidden="true">PM</div><div><h3>Patrick Murray</h3><div class="role">Co-Founder and Chairman, On Air Parking</div></div></div>
+          <p>Patrick co-founded On Air Parking in 2016 to make parking the preferred choice for leisure and vacation travelers heading to the airport. Before that, he co-founded Way.com, and he has spent more than a decade driving sales and growth in the parking industry.</p>
+        </article>
+        <article class="advisor">
+          <div class="advisor-head"><div class="portrait sm" aria-hidden="true">RS</div><div><h3>Ryan Smith</h3><div class="role">Co-Founder, LeafLink and Mura</div></div></div>
+          <p>Ryan co-founded LeafLink and led it as CEO for eight years, building it into a leading wholesale marketplace backed by Lerer Hippeau, Thrive and Founders Fund. He went on to co-found Mura, an AI-powered billing and collections company acquired by ServiceTrade in 2026. Earlier, he founded Trupoly, which is now part of RealPage.</p>
         </article>
       </div>
     </div>
