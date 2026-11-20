@@ -5,7 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Park Equity</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Park Equity LLC invests in, owns and advises businesses that advance the parking and mobility industry.">
+<meta name="description" content="Park Equity is a Jersey City investment firm that owns, invests in and advises parking, mobility and transportation businesses, backed by more than 40 years of parking ownership and operating experience.">
+<link rel="canonical" href="https://parkequityusa.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Park Equity">
+<meta property="og:description" content="Park Equity is a Jersey City investment firm that owns, invests in and advises parking, mobility and transportation businesses, backed by more than 40 years of parking ownership and operating experience.">
+<meta property="og:url" content="https://parkequityusa.com/">
+<meta property="og:image" content="https://parkequityusa.com/park-equity-logo.png">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://parkequityusa.com/#org","name":"Park Equity","legalName":"Park Equity LLC","url":"https://parkequityusa.com/","logo":"https://parkequityusa.com/park-equity-logo.png","foundingDate":"2002","description":"Park Equity is a Jersey City investment firm that owns, invests in and advises parking, mobility and transportation businesses, backed by more than 40 years of parking ownership and operating experience.","email":"brett@parkequityusa.com","address":{"@type":"PostalAddress","streetAddress":"921 Bergen Ave, 4th Floor","addressLocality":"Jersey City","addressRegion":"NJ","postalCode":"07306","addressCountry":"US"},"areaServed":"North America","knowsAbout":["Parking","Mobility","Transportation access","Parking asset ownership","Venture investment"],"founder":{"@id":"https://parkequityusa.com/#brett-harwood"}},{"@type":"Person","@id":"https://parkequityusa.com/#brett-harwood","name":"Brett Harwood","jobTitle":"Founder, Principal and Philanthropist","worksFor":{"@id":"https://parkequityusa.com/#org"},"sameAs":["https://www.linkedin.com/in/brett-harwood/"]},{"@type":"Person","@id":"https://parkequityusa.com/#shawn-harwood","name":"Shawn Harwood","jobTitle":"Managing Partner","worksFor":{"@id":"https://parkequityusa.com/#org"},"sameAs":["https://www.linkedin.com/in/shawnharwood/"]},{"@type":"Person","@id":"https://parkequityusa.com/#joe-suri","name":"Joe Suri","jobTitle":"Associate Partner","worksFor":{"@id":"https://parkequityusa.com/#org"},"sameAs":["https://www.linkedin.com/in/joe-suri/"]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What does Park Equity invest in?","acceptedAnswer":{"@type":"Answer","text":"Businesses that improve parking, mobility and transportation access, from operating garages and parking operators to technology companies. We also hold select venture, real estate, hospitality and fund investments."}},{"@type":"Question","name":"Does Park Equity own parking assets?","acceptedAnswer":{"@type":"Answer","text":"Yes. Our team has owned and operated parking for more than 40 years, including Pi Alley Garage in Boston, a holding since 1986."}},{"@type":"Question","name":"How involved is Park Equity after investing?","acceptedAnswer":{"@type":"Answer","text":"Closely. Our principals often serve as chairman or board members, as with Noson / OnAir Parking and Welcome Parking, and support management teams with strategic planning, executive coaching and operating advice."}},{"@type":"Question","name":"How do I bring an opportunity to Park Equity?","acceptedAnswer":{"@type":"Answer","text":"Use the contact form below or email brett@parkequityusa.com. Every inquiry is reviewed and answered personally."}},{"@type":"Question","name":"Where is Park Equity based?","acceptedAnswer":{"@type":"Answer","text":"Jersey City, New Jersey, at 921 Bergen Ave. We work with owners, operators and founders across North America."}}]}]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap">
@@ -362,7 +370,7 @@ footer { background: #fff; color: var(--muted); }
 .site-header { border-bottom: 0; box-shadow: 0 1px 0 var(--line); }
 .site-header::after { content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 2px; background: linear-gradient(90deg, var(--accent) 0%, var(--accent) 55%, var(--rose) 80%, var(--sky) 100%); opacity: .55; }
 .hero { background: linear-gradient(180deg, #ffffff 0%, #ffffff 50%, var(--lime-soft) 85%, var(--blush) 100%); }
-.stat b sup { color: var(--rose); }
+.stat b sup { color: var(--wine); }
 .principle .n { color: var(--wine); }
 .service:hover { background: var(--blush); }
 .holding:hover { border-color: var(--rose); }
@@ -394,6 +402,44 @@ footer { border-top: 3px solid; border-image: linear-gradient(90deg, var(--accen
 .portrait.sm { width: 64px; height: 64px; font-size: 1.25rem; }
 @media (max-width: 860px) { .advisors { grid-template-columns: 1fr; } }
 
+/* Work with us */
+.paths { background: var(--surface-2); }
+.path-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.path { background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 30px; display: grid; gap: 14px; align-content: start; }
+.path-for { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--wine); }
+.path h3 { font-size: 1.3rem; font-weight: 600; }
+.path p { color: var(--muted); }
+.path-links { display: flex; flex-wrap: wrap; gap: 18px; align-items: center; }
+.path-cta { display: inline-flex; align-items: center; gap: 10px; font-weight: 600; color: var(--accent); text-decoration: none; margin-top: 4px; }
+.path-cta:hover { color: var(--ink); }
+.path-cta.subtle { color: var(--muted); border-bottom: 1px solid var(--line); }
+@media (max-width: 900px) { .path-grid { grid-template-columns: 1fr; } }
+/* Case notes */
+.cases { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 44px; }
+.case { border-top: 3px solid var(--accent); padding-top: 20px; display: grid; gap: 10px; align-content: start; }
+.case:nth-child(2) { border-top-color: var(--rose); }
+.case-meta { display: flex; gap: 14px; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+.case-meta span + span::before { content: "·"; margin-right: 14px; color: var(--line); }
+.case h3 { font-size: 1.35rem; font-weight: 600; }
+.case p { color: var(--muted); }
+@media (max-width: 900px) { .cases { grid-template-columns: 1fr; gap: 28px; } }
+/* LinkedIn links */
+a.li { display: inline-block; margin-top: 6px; font-size: 0.82rem; font-weight: 600; color: var(--accent); text-decoration: none; border-bottom: 1px solid currentColor; }
+a.li:hover { color: var(--wine); }
+/* FAQ */
+.faq { background: var(--surface-2); }
+.faq-grid { display: grid; grid-template-columns: 1fr 1.6fr; gap: clamp(32px, 6vw, 88px); align-items: start; }
+.faq-grid > * { min-width: 0; }
+.faq h2 { font-size: var(--step-3); margin-top: 16px; }
+.faq-list { display: grid; gap: 12px; }
+.faq details { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 18px 22px; }
+.faq summary { cursor: pointer; font-weight: 600; font-size: 1.05rem; list-style: none; display: flex; justify-content: space-between; gap: 16px; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; color: var(--accent); font-weight: 400; font-size: 1.3rem; line-height: 1; }
+.faq details[open] summary::after { content: "−"; }
+.faq details p { color: var(--muted); margin-top: 10px; }
+@media (max-width: 900px) { .faq-grid { grid-template-columns: 1fr; } }
+
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
 </style>
 </head>
@@ -409,6 +455,7 @@ footer { border-top: 3px solid; border-image: linear-gradient(90deg, var(--accen
       <li><a href="#record">Track Record</a></li>
       <li><a href="#leadership">Leadership</a></li>
       <li><a href="#advisory-board">Advisory Board</a></li>
+      <li><a href="#faq">FAQ</a></li>
     </ul>
     <a class="nav-cta" href="#contact">Get in touch</a>
     <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
@@ -488,6 +535,41 @@ footer { border-top: 3px solid; border-image: linear-gradient(90deg, var(--accen
           <h3>Advise</h3>
           <p>Discreet, senior counsel for investors, owners and developers, grounded in decades of industry practice.</p>
           <ul><li>Strategic planning</li><li>Executive coaching</li><li>Management consulting</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="work-with-us" class="paths" aria-labelledby="paths-title">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Work With Us</span>
+          <h2 id="paths-title">Find the right conversation</h2>
+        </div>
+        <p class="lede">Every inquiry is read and answered personally by our team. Choose the path that fits you best.</p>
+      </div>
+      <div class="path-grid">
+        <article class="path">
+          <span class="path-for">Founders &amp; mobility companies</span>
+          <h3>Raising capital to improve how people park and move</h3>
+          <p>We invest alongside founders building parking, mobility and transportation access businesses, and we stay close after the check clears. You get partners who have run parking companies, not just funded them.</p>
+          <a class="path-cta" href="#contact" data-topic="Investment opportunity">Share your company <span class="circ" aria-hidden="true">→</span></a>
+        </article>
+        <article class="path">
+          <span class="path-for">Parking owners &amp; developers</span>
+          <h3>Weighing a sale, repositioning or better management</h3>
+          <p>Our team has owned and operated parking for more than 40 years, and Managing Partner Shawn Harwood leads operator Square Parking. We can talk through acquisition, partnership or management options for your asset.</p>
+          <a class="path-cta" href="#contact" data-topic="Parking asset or operator">Discuss your asset <span class="circ" aria-hidden="true">→</span></a>
+        </article>
+        <article class="path">
+          <span class="path-for">Co-investors &amp; advisors</span>
+          <h3>Looking to partner on deals or share expertise</h3>
+          <p>See where we invest and the experience behind it, then reach out about co-investing or advisory work with our team and portfolio companies.</p>
+          <div class="path-links">
+            <a class="path-cta" href="#portfolio">View the portfolio <span class="circ" aria-hidden="true">→</span></a>
+            <a class="path-cta subtle" href="#record">Track record</a>
+          </div>
         </article>
       </div>
     </div>
@@ -574,6 +656,23 @@ footer { border-top: 3px solid; border-image: linear-gradient(90deg, var(--accen
         </div>
         <p class="lede">Operating parking businesses we have held for decades, alongside venture, real estate and fund investments with partners we believe in. Years show when each investment was first made.</p>
       </div>
+      <div class="cases" aria-label="Selected holdings">
+        <article class="case">
+          <div class="case-meta"><span>Since 1986</span><span>Partner</span></div>
+          <h3>Pi Alley Garage, Boston</h3>
+          <p>A Downtown Crossing garage serving Boston since 1969. Under long term ownership it has grown into a modern downtown amenity, with prepaid reservations, protected parking and EV charging, and a brand built around meeting up in the city.</p>
+        </article>
+        <article class="case">
+          <div class="case-meta"><span>Since 2016</span><span>Co-founder</span></div>
+          <h3>Noson / OnAir Parking</h3>
+          <p>Co-founded with Patrick Murray, now a member of our Advisory Board, to give leisure and vacation travelers a simple, cost effective way to park for the airport. Its OnAir brand serves airports across North America.</p>
+        </article>
+        <article class="case">
+          <div class="case-meta"><span>Since 2006</span><span>Chairman</span></div>
+          <h3>Welcome Parking</h3>
+          <p>Parking management for property owners across New York and New Jersey, built on 60 years of owning and operating. Its edge is personal engagement from its principals and a talented operating team.</p>
+        </article>
+      </div>
       <div class="filters" role="group" aria-label="Filter portfolio">
         <button class="chip" type="button" data-filter="all" aria-pressed="true">All</button>
         <button class="chip" type="button" data-filter="parking" aria-pressed="false">Parking &amp; Mobility</button>
@@ -653,7 +752,7 @@ footer { border-top: 3px solid; border-image: linear-gradient(90deg, var(--accen
       </div>
       <div class="leaders">
         <article class="leader">
-          <div class="leader-head"><div class="portrait"><img src="brett-harwood.jpg" alt="Brett Harwood" width="92" height="92"></div><div><h3>Brett Harwood</h3><div class="role">Founder, Principal and Philanthropist</div></div></div>
+          <div class="leader-head"><div class="portrait"><img src="brett-harwood.jpg" alt="Brett Harwood" width="92" height="92"></div><div><h3>Brett Harwood</h3><div class="role">Founder, Principal and Philanthropist</div><a class="li" href="https://www.linkedin.com/in/brett-harwood/" target="_blank" rel="noopener" aria-label="Brett Harwood on LinkedIn">LinkedIn</a></div></div>
           <div class="leader-body">
             <p>Brett founded Park Equity in 2002 after more than 25 years leading parking businesses, including two decades as President of Square Industries and terms as President and Chairman of the National Parking Association. He is Chairman and Co-Founder of Noson and OnAir Parking, Chairman of Welcome Parking and a longtime partner in Pi Alley Garage.</p>
             <p>Brett is a dedicated philanthropist, and his life's mission is to leave the world better than we found it. A former Trustee of Franklin &amp; Marshall College, he also served as Chairman and Trustee of Liberty Healthcare System.</p>
@@ -661,7 +760,7 @@ footer { border-top: 3px solid; border-image: linear-gradient(90deg, var(--accen
           </div>
         </article>
         <article class="leader">
-          <div class="leader-head"><div class="portrait" aria-hidden="true">SH</div><div><h3>Shawn Harwood</h3><div class="role">Managing Partner</div></div></div>
+          <div class="leader-head"><div class="portrait" aria-hidden="true">SH</div><div><h3>Shawn Harwood</h3><div class="role">Managing Partner</div><a class="li" href="https://www.linkedin.com/in/shawnharwood/" target="_blank" rel="noopener" aria-label="Shawn Harwood on LinkedIn">LinkedIn</a></div></div>
           <div class="leader-body">
             <p>Shawn is CEO of Square Parking and a fourth generation leader in the parking industry. He joined Park Equity in 2021, after serving as Director of Development for Square Parking, Pi Alley Garage and Welcome Parking, and as Senior Operations Manager at SP+.</p>
             <p>An NPA 40 Under 40 honoree and an active voice with the National Parking Association and IPMI, Shawn brings hands on operating experience across office, residential, hospital, hotel, stadium and garage environments.</p>
@@ -669,7 +768,7 @@ footer { border-top: 3px solid; border-image: linear-gradient(90deg, var(--accen
           </div>
         </article>
         <article class="leader">
-          <div class="leader-head"><div class="portrait"><img src="joe-suri.jpg" alt="Joe Suri" width="92" height="92"></div><div><h3>Joe Suri</h3><div class="role">Associate Partner</div></div></div>
+          <div class="leader-head"><div class="portrait"><img src="joe-suri.jpg" alt="Joe Suri" width="92" height="92"></div><div><h3>Joe Suri</h3><div class="role">Associate Partner</div><a class="li" href="https://www.linkedin.com/in/joe-suri/" target="_blank" rel="noopener" aria-label="Joe Suri on LinkedIn">LinkedIn</a></div></div>
           <div class="leader-body">
             <p>As Associate Partner, Joe works on sourcing new investments, supporting portfolio companies and building relationships across the parking and mobility industry, where he has spent his career. He is Director of Business Development at Square Parking, previously worked at SKIDATA and founded NextGen Mobility Reps.</p>
             <p>Joe is also the Co-Founder of ClearPath USA, an EdTech company that helps international students navigate life in the United States, from arrival through graduation and into their first job. He holds a degree in Business Entrepreneurship and Business Administration from Boise State University.</p>
@@ -691,19 +790,19 @@ footer { border-top: 3px solid; border-image: linear-gradient(90deg, var(--accen
       </div>
       <div class="advisors">
         <article class="advisor">
-          <div class="advisor-head"><div class="portrait sm" aria-hidden="true">AK</div><div><h3>Alex Kruger</h3><div class="role">CEO, Scale Army</div></div></div>
+          <div class="advisor-head"><div class="portrait sm" aria-hidden="true">AK</div><div><h3>Alex Kruger</h3><div class="role">CEO, Scale Army</div><a class="li" href="https://www.linkedin.com/in/amkruger/" target="_blank" rel="noopener" aria-label="Alex Kruger on LinkedIn">LinkedIn</a></div></div>
           <p>Alex leads Scale Army, which connects companies with AI-enabled marketing and engineering talent and has served more than 600 clients. He is also President of PolyOps and a longtime growth advisor to Skylight. He previously led growth at Wisecrack through its acquisition by Omnia Media, and he was an early investor in LeafLink.</p>
         </article>
         <article class="advisor">
-          <div class="advisor-head"><div class="portrait sm" aria-hidden="true">JA</div><div><h3>Jason Anderson</h3><div class="role">Head of Operations, Ethic</div></div></div>
+          <div class="advisor-head"><div class="portrait sm" aria-hidden="true">JA</div><div><h3>Jason Anderson</h3><div class="role">Head of Operations, Ethic</div><a class="li" href="https://www.linkedin.com/in/hijasonanderson/" target="_blank" rel="noopener" aria-label="Jason Anderson on LinkedIn">LinkedIn</a></div></div>
           <p>Jason runs operations at Ethic in New York. He spent nearly five years at Addepar, building the operations and compliance function for its Marketplace business, which served family offices and wealth managers. He also served as President of Neighborly Securities and as a Principal at NTD Capital, evaluating small business acquisitions.</p>
         </article>
         <article class="advisor">
-          <div class="advisor-head"><div class="portrait sm" aria-hidden="true">PM</div><div><h3>Patrick Murray</h3><div class="role">Co-Founder and Chairman, On Air Parking</div></div></div>
+          <div class="advisor-head"><div class="portrait sm" aria-hidden="true">PM</div><div><h3>Patrick Murray</h3><div class="role">Co-Founder and Chairman, On Air Parking</div><a class="li" href="https://www.linkedin.com/in/patrickmichaelmurray/" target="_blank" rel="noopener" aria-label="Patrick Murray on LinkedIn">LinkedIn</a></div></div>
           <p>Patrick co-founded On Air Parking in 2016 to make parking the preferred choice for leisure and vacation travelers heading to the airport. Before that, he co-founded Way.com, and he has spent more than a decade driving sales and growth in the parking industry.</p>
         </article>
         <article class="advisor">
-          <div class="advisor-head"><div class="portrait sm" aria-hidden="true">RS</div><div><h3>Ryan Smith</h3><div class="role">VP, AI Billing &amp; Collections, ServiceTrade</div></div></div>
+          <div class="advisor-head"><div class="portrait sm" aria-hidden="true">RS</div><div><h3>Ryan Smith</h3><div class="role">VP, AI Billing &amp; Collections, ServiceTrade</div><a class="li" href="https://www.linkedin.com/in/ryan-g-smith/" target="_blank" rel="noopener" aria-label="Ryan Smith on LinkedIn">LinkedIn</a></div></div>
           <p>Ryan co-founded LeafLink and led it as CEO for eight years, building it into a leading wholesale marketplace backed by Lerer Hippeau, Thrive and Founders Fund. He went on to co-found Mura, an AI-powered billing and collections company acquired by ServiceTrade in 2026, where he now leads AI billing and collections as Vice President. Earlier, he founded Trupoly, which is now part of RealPage.</p>
         </article>
       </div>
@@ -725,6 +824,22 @@ footer { border-top: 3px solid; border-image: linear-gradient(90deg, var(--accen
         <div class="steward"><h3>NPA 40 Under 40</h3><p>Sponsor of the National Parking Association's recognition of emerging industry leaders.</p></div>
         <div class="steward"><h3>Harwood CEO and Legal Forums</h3><p>Twice yearly sessions at national conferences that give parking leaders critical information.</p></div>
         <div class="steward"><h3>Franklin &amp; Marshall College</h3><p>Trustee from 2008 to 2018 and supporter of the Klehr Center for Jewish Life, the Harwood Seminars and Harwood Commons.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="faq" aria-labelledby="faq-title">
+    <div class="wrap faq-grid">
+      <div>
+        <span class="eyebrow">FAQ</span>
+        <h2 id="faq-title">Common questions</h2>
+      </div>
+      <div class="faq-list">
+        <details open><summary>What does Park Equity invest in?</summary><p>Businesses that improve parking, mobility and transportation access, from operating garages and parking operators to technology companies. We also hold select venture, real estate, hospitality and fund investments.</p></details>
+        <details><summary>Does Park Equity own parking assets?</summary><p>Yes. Our team has owned and operated parking for more than 40 years, including Pi Alley Garage in Boston, a holding since 1986.</p></details>
+        <details><summary>How involved is Park Equity after investing?</summary><p>Closely. Our principals often serve as chairman or board members, as with Noson / OnAir Parking and Welcome Parking, and support management teams with strategic planning, executive coaching and operating advice.</p></details>
+        <details><summary>How do I bring an opportunity to Park Equity?</summary><p>Use the contact form below or email brett@parkequityusa.com. Every inquiry is reviewed and answered personally.</p></details>
+        <details><summary>Where is Park Equity based?</summary><p>Jersey City, New Jersey, at 921 Bergen Ave. We work with owners, operators and founders across North America.</p></details>
       </div>
     </div>
   </section>
@@ -801,6 +916,12 @@ footer { border-top: 3px solid; border-image: linear-gradient(90deg, var(--accen
   /* Portfolio filter */
   var chips = document.querySelectorAll('.chip');
   var items = document.querySelectorAll('.holding');
+  document.querySelectorAll('[data-topic]').forEach(function (a) {
+    a.addEventListener('click', function () {
+      var sel = document.getElementById('f-topic');
+      if (sel) sel.value = a.getAttribute('data-topic');
+    });
+  });
   chips.forEach(function (c) {
     c.addEventListener('click', function () {
       chips.forEach(function (x) { x.setAttribute('aria-pressed', x === c ? 'true' : 'false'); });
